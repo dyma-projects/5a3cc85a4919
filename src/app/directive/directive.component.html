@@ -1,0 +1,17 @@
+<img src="{{lienImage}}" alt="#">
+<img [src]="lienImage" alt="#">
+<hr>
+<input type="text" [(ngModel)]="data">
+<p>Two-Way DataBinding : {{data}}</p>
+
+
+
+<hr>
+<p *ngIf="status">p1</p>
+<p *ngIf="!status">p2</p>
+<button class="btn btn-primary" (click)="changeStatus()">Passer au status "{{inverseStatus()}}"</button>
+<hr>
+<ul>
+  <li *ngFor="let text of texts">{{text}}</li>
+</ul>
+<hr>
